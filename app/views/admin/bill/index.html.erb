@@ -1,0 +1,11 @@
+<tbody>
+<% @bills.each do |bill| %>
+  <tr>
+    <td><%= bill.start_renting %></td>
+    <td><%= bill.end_renting %></td>
+    <td><%= bill.total %></td>
+    <td><%= bill.status %></td>
+    <td><%= bill.role%></td>
+  </tr>
+<% end %>
+</tbody>
