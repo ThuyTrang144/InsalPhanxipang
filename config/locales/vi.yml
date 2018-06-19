@@ -57,6 +57,7 @@ vi:
       create_title: "THÊM DANH MỤC MỚI"
       close: "Đóng"
       add_image: "Chọn ảnh"
+      edit_category: "SỬA DANH MỤC"
   layouts:
     categories: "Danh Mục"
     bills: "Hóa Đơn"

@@ -1,63 +1,70 @@
-.box-body {
+.row-item {
+  margin-top: 50px;
+}
+.box-category {
   position: relative;
+  border: 1px solid #e7e7e7;
+  transition: all .35s ease;
+  margin-top: 30px;
   .categories-controller {
+    display: none;
+  }
+}
+.box-name-category {
+  height: 100%;
+  background-color: white;
+}
+.box-category:hover {
+  border: 1px solid #3c8dbc;
+  transform: scale(1.05,1.05);
+  webkit-transform: scale(1.05,1.05);
+  .name-category {
+    background-color: #3c8dbc;
+    color: white;
+    opacity: 0.9;
+  }
+  .categories-controller {
+    display: block;
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 5px;
+    top: 5px;
   }
 }
-.media {
-  .media-object {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(0,0,0,.15);
-  }
-}
-.category-title {
-  background-color:none;
-  font-size: 20px;
+.name-category {
   text-align: center;
-  padding: 7px 10px;
-  margin-top: 10px;
+  position: absolute;
+  line-height: 40px;
+  font-size: 17px;
+  color: black;
+  z-index: 1;
+  bottom: 0.5px;
+  opacity: 0.6;
+  background-color: white;
+  width: 100%;
 }
-.add-category__btn {
-  .container {
-    .category__name_field {
-      font-size: 20px;
-      margin-bottom: 15px;
-      height: 30px
-    }
-    .btn__add {
-      background: none;
-      color: black;
-      border-color: black;
-      font-size: 100px;
-      transform: translate(50%,50%);
-    }
-  .modal-footer {
-    .btn-save {
-      background-color: #f4f4f4;
-      color: #444;
-      border-color: #ddd;
-      border-radius: 3px;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      border: 1px solid transparent;
-      display: inline-block;
-      margin-bottom: 0;
-      font-weight: normal;
-      text-align: center;
-      vertical-align: middle;
-      touch-action: manipulation;
-      cursor: pointer;
-      background-image: none;
-      border: 1px solid transparent;
-      white-space: nowrap;
-      padding: 6px 12px;
-      font-size: 14px;
-      line-height: 1.428571429;
-    }
-  }
-  }
+
+.modal-body {
+  height: 200px;
+}
+.new-category {
+  margin-top: 30px;
+}
+.category__name_field {
+  line-height: 25px;
+  width: 300px;
+  border: 1px solid #3c8dbc;
+}
+.add-image {
+  margin-top: 30px;
+  color: #3c8dbc;
+}
+.btn-group-add-category  {
+  margin-top: 10px;
+  float: right;
+  border-top: 1px solid #f4f4f4;
+  width: 100%;
+
+}
+.btn-primary {
+  margin-right: 10px;
 }

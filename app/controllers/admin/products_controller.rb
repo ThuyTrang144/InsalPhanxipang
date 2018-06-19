@@ -44,9 +44,6 @@ class Admin::ProductsController < Admin::ApplicationController
   end
 
   def destroy
-
-    binding.pry
-
     @products = Product.find_by id: params[:product_id]
     if @products.destroy
 			flash[:notice] = [t("admin.products.notice_delete"), "success"]

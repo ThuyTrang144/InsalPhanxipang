@@ -1,0 +1,40 @@
+<div class="row-item">
+  <div class="col-md-3 col-sm-6 col-xs-12" id="category_<%= category.id %>">
+    <div class="box-category">
+      <div class="category-content">
+        <a href="#" class="ad-click-event image-category">
+          <img  class="image" src="<%= category.image %>" alt="Material Dashboard Pro">
+          <span class="name-category"><%= category.name %></span>
+        </a>
+        <div class = "btn-group categories-controller">
+          <%= link_to edit_admin_category_path(category), remote: true, :class => 'btn btn-default' do %>
+          <i class="fa fa-edit"></i>
+          <%end%>
+          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default<%=category.id%>">
+            <i class="fa fa-trash"></i>
+          </button>
+          <div class="modal fade" id="modal-default<%=category.id%>" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title"><%= t "admin.categories.del_confirm_title" %></h4>
+                </div>
+                <div class="modal-body">
+                  <p><%= t "admin.categories.del_confirmation"%><%=category.name%>?</p>
+                </div>
+                <div class="modal-footer">
+                  <%= link_to admin_category_path(category),method: :delete,
+                  data: {} do %>
+                  <button type="button" class="btn btn-default" data-dismiss="modal"><%= t "admin.categories.del" %></button>
+                  <% end %>
+                  <button type="button" class="btn btn-default" data-dismiss="modal"><%= t "admin.categories.close" %></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
