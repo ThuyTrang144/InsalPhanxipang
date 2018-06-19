@@ -44,7 +44,6 @@ vi:
       remove: "Xóa"
       extend: "Gia hạn"
       extend_renting: "Ngày gia hạn"
-      btn_pay: "Trả"
       btn_cancel: "Thoát"
       total_money: "Thành tiền"
     categories:

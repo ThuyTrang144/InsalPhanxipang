@@ -44,7 +44,6 @@ en:
       remove: "Remove"
       extend: "Extend"
       extend_renting: "Extend renting"
-      btn_pay: "Pay"
       btn_cancel: "Cancel"
       total_money: "Total money"
     categories:
